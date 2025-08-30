@@ -1,7 +1,7 @@
-import { styles } from "../styles";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { styles } from "../styles";
 
 export default function Index() {
   return (
@@ -9,7 +9,7 @@ export default function Index() {
       <SafeAreaView style={styles.container}>
         <View style={styles.navGroup}>
           <Ionicons name="arrow-back" size={25} />
-          <Image source={require('@/assets/images/logo.png')} />
+          <Image source={require('../assets/images/logo.png')} />
         </View>
         <Text style={styles.largeText}>Sign in to your</Text>
         <Text style={styles.largeText}>Account</Text>
@@ -37,29 +37,15 @@ export default function Index() {
         </TouchableOpacity>
 
         <View style={styles.dividerGroup}>
-          <View
-            style={styles.divider}
-          ></View>
-          <Text
-            style={styles.dividerText}
-          >
-            OR
-          </Text>
-          <View
-            style={styles.divider}
-          ></View>
+          <View style={styles.divider}></View>
+          <Text style={styles.dividerText}>OR</Text>
+          <View style={styles.divider}></View>
         </View>
 
         <View style={styles.socialMediaButtonGroup}>
           <TouchableOpacity style={styles.socialMediaButton}>
-            <View
-              style={{
-                flexDirection: "row",
-                alignItems: "center",
-                gap: 5,
-              }}
-            >
-              <Image source={require("@/assets/images/google.png")} />
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+              <Image source={require("../assets/images/google.png")} />
               <Text style={styles.socialMediaButtonText}>
                 Continue with Google
               </Text>
@@ -67,14 +53,8 @@ export default function Index() {
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.socialMediaButton}>
-            <View
-              style={{
-                flexDirection: "row",
-                alignItems: "center",
-                gap: 5,
-              }}
-            >
-              <Image source={require("@/assets/images/facebook.png")} />
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+              <Image source={require("../assets/images/facebook.png")} />
               <Text style={styles.socialMediaButtonText}>
                 Continue with Facebook
               </Text>
@@ -83,7 +63,7 @@ export default function Index() {
         </View>
 
         <View style={styles.subTextGroup}>
-          <Text style={styles.subText}>Don&apos;t have an account?</Text>
+          <Text style={styles.subText}>Don't have an account?</Text>
           <Text style={styles.subTextJoin}>Join now</Text>
         </View>
       </SafeAreaView>
