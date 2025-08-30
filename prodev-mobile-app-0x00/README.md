@@ -17,7 +17,7 @@
 ## Home Screen Modification
 
 - Edited `app/(tabs)/index.tsx`.
-- Changed the default text from `Welcome!` to `First App Created`.
+- Changed the default text from `Welcome!` to `** First App Created**`.
 
 ## Running and Testing the Application
 
