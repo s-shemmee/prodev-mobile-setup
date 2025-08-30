@@ -21,6 +21,12 @@ export default function Index() {
               <Text style={styles.textSmall}>million properties worldwide</Text>
             </View>
 
+            <View>
+              <Text style={styles.largeText}>Typescript is great if you practice more</Text>
+              <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
+              <Text style={styles.smallText}>ALX is awesome</Text>
+            </View>
+
             <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
               <View style={styles.buttonGroup}>
                 <TouchableOpacity style={styles.button}>
@@ -99,5 +105,25 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 20,
     paddingHorizontal: 20,
+  },
+  largeText: {
+    fontSize: 30,
+    color: "#f44336",
+    marginBottom: 5,
+    fontWeight: "700",
+    fontVariant: ["small-caps"],
+  },
+  mediumText: {
+    fontSize: 20,
+    color: "#9c27b0",
+    marginBottom: 10,
+    fontWeight: "500",
+    textAlign: "right",
+  },
+  smallText: {
+    fontSize: 15,
+    color: "#2196f3",
+    fontWeight: "400",
+    textAlign: "center",
   },
 });
